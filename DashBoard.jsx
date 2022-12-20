@@ -5,8 +5,12 @@ function DashBoard(){
         }
     };
     
+    
         return(
-            <h1 style={styles.heading}>DashBoard</h1>
+            <div><h1 style={styles.heading}>DashBoard</h1>
+            <h2 style={{color:'blue'}}>Welcome to React</h2>
+            </div>
+            
         )
     
 }

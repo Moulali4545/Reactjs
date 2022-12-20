@@ -99,7 +99,7 @@ class NavBar extends Component
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-            <nav className="navbar navbar-expand-lg bg-info">
+            <nav className="navbar navbar-expand-lg bg-danger">
   <div className="container-fluid">
     <a className="navbar-brand" href="#/">
     </a>
@@ -120,17 +120,24 @@ class NavBar extends Component
         <li className="nav-item">
           <Link className="nav-link" to="/ShoppingCart">ShoppingCart</Link>
         </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#/">Action</a></li>
-            <li><a className="dropdown-item" href="#/">Another action</a></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="#/">Something else here</a></li>
-          </ul>
+        <li className="nav-item">
+          <Link className="nav-link" to="/SignIn">SignIn</Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/SignUp">SignUp</Link>
+        </li>
+        <div><li className="nav-item dropdown">
+          <Link className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Technologies
+          </Link>
+          <ul className="dropdown-menu">
+            <li><Link className="dropdown-item" to="/Technologies/Angular">Angular</Link></li>
+            <li><Link className="dropdown-item" to="/Technologies/Reactts">React</Link></li>
+            <li><hr className="dropdown-divider"/></li>
+            <li><Link className="dropdown-item" to="#/">Something else here</Link></li>
+            
+          </ul>
+        </li></div>
       </ul>
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
